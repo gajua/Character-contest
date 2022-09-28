@@ -33,7 +33,7 @@ header {
   z-index: -1;
   border-radius: 48% 52% 29% 71% / 71% 65% 35% 29%;
   transform: rotate(-40deg);
-  transform-origin: bottom ;
+  transform-origin: bottom;
   animation: hair 1.5s infinite alternate;
 }
 .body {
@@ -44,7 +44,6 @@ header {
   height: 400px;
   z-index: 1;
   border-bottom: 1.1px solid #000;
-  /* border: 1px solid #000; */
   border-radius: 53% 47% 71% 29% / 30% 33% 67% 70%;
 }
 .eye {
@@ -72,29 +71,29 @@ header {
   width: 35px;
   height: 35px;
   border-bottom: 1px solid rgb(134, 49, 49);
-  background: linear-gradient(30deg, #8b320c 0%, #FB811C 50%);
+  background: linear-gradient(30deg, #8b320c 0%, #fb811c 50%);
   border-radius: 80% 20% 16% 84% / 48% 42% 58% 52%;
   z-index: 100;
 }
-.cheek{
+.cheek {
   position: absolute;
   top: -40px;
   left: 133px;
-  z-index: 30px;
+  z-index: 30;
   width: 60px;
-  border-radius: 50%;
-  background-color: #FEABAB;
   height: 65px;
+  border-radius: 50%;
+  background-color: #feabab;
 }
-.mouth.bottom{
+.mouth.bottom {
   position: absolute;
   top: 190px;
   left: 25px;
   width: 30px;
   height: 30px;
   border-bottom: 1px solid rgb(141, 49, 49);
-  background: linear-gradient(30deg, #8b320c 0%, #FB811C 50%);
-  border-radius: 65% 35% 36% 64% / 48% 42% 58% 52% ;
+  background: linear-gradient(30deg, #8b320c 0%, #fb811c 50%);
+  border-radius: 65% 35% 36% 64% / 48% 42% 58% 52%;
   z-index: 90;
 }
 .wing {
@@ -125,30 +124,30 @@ header {
   transform-origin: bottom left;
   animation: tail 1.5s infinite alternate;
 }
-.foot{
+.foot {
   position: absolute;
- 
+
   width: 35px;
   height: 55px;
   border-bottom: 1px solid rgb(134, 49, 49);
-  background: linear-gradient(90deg, #8b320c 0%, #FB811C 50%);
+  background: linear-gradient(90deg, #8b320c 0%, #fb811c 50%);
   border-radius: 80% 20% 16% 84% / 48% 42% 58% 52%;
   animation: foot 1s infinite alternate;
 }
-.foot.left{
+.foot.left {
   bottom: -30px;
   left: 139px;
   z-index: -10;
   transform: rotate(-80deg);
   animation-delay: 1s;
 }
-.foot.right{
+.foot.right {
   bottom: -25px;
   left: 239px;
   z-index: 10;
   transform: rotate(-100deg);
 }
-footer{
+footer {
   position: absolute;
   bottom: -100px;
   background-color: #d1cece;
@@ -157,13 +156,13 @@ footer{
   height: 200px;
   z-index: -100;
 }
-footer ul{
+footer ul {
   display: flex;
   justify-content: space-between;
   position: absolute;
   left: -3000px;
 }
-footer ul li{
+footer ul li {
   list-style: none;
   margin: 20px;
   background-color: #928f8f;
@@ -176,7 +175,7 @@ footer ul li{
     transform: rotate(-10deg);
   }
   to {
-    transform: rotate(-30deg) 
+    transform: rotate(-30deg);
   }
 }
 @keyframes wing {
@@ -202,14 +201,95 @@ footer ul li{
     transform: rotate(-80deg) translateY(0px);
   }
   to {
-    transform: rotate(-100deg)translateY(80px);
+    transform: rotate(-100deg) translateY(80px);
   }
 }
 @keyframes footer {
   0% {
-    transform:  translateX(0px);
+    transform: translateX(0px);
   }
   100% {
     transform: translateX(2000px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pet {
+    margin: 200px auto;
+    width: 400px;
+    height: 400px;
+  }
+  header {
+    width: 400px;
+    height: 333.3px;
+  }
+  .hair {
+    height: 106.656px;
+    width: 79.92px;
+    z-index: -1;
+  }
+  .body {
+    width: 400px;
+    height: 240px;
+    top: 150px;
+    z-index: 1;
+  }
+  .eye {
+    width: 23.31px;
+    height: 23.31px;
+  }
+  .eye.left {
+    top: 102px;
+    left: 11px;
+    z-index: -10;
+  }
+  .eye.right {
+    top: 125px;
+    left: 80px;
+    z-index: 45;
+  }
+  .mouth.top {
+    width: 23.31px;
+    height: 23.31px;
+    top: 140px;
+    left: 5px;
+  }
+  .mouth.bottom {
+    width: 20px;
+    height: 20px;
+    top: 155px;
+    left: 5px;
+  }
+  .cheek{
+    z-index: 30;
+    top: -15px;
+  left: 88px;
+  width: 40px;
+  height: 43px;
+  }
+  .wing{
+    left: 150px;
+  top: 50px;
+  width: 80px;
+  height: 100px;
+  }
+  .tail{
+    top: 40px;
+  right: -40px;
+  width: 95px;
+  height: 100px;
+  }
+  .foot{
+    
+  width: 25px;
+  height: 48px;
+  }
+  .foot.left{
+    bottom: -20px;
+    left: 109px;
+  }
+  .foot.right{
+    bottom: -15px;
+    left: 149px;
   }
 }
