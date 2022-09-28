@@ -4,7 +4,11 @@
 https://gajua.github.io/Character-contest/
 
 
-https://user-images.githubusercontent.com/101968934/192733200-93febfa9-d8c3-4fc1-9364-dcd85287a9e5.mp4
+
+
+https://user-images.githubusercontent.com/101968934/192806634-6c3a45ac-1320-4530-99f6-5c4f62a07bac.mp4
+
+
 
 
 
