@@ -150,10 +150,12 @@ header {
 }
 footer{
   position: absolute;
-  bottom: 100px;
+  bottom: -100px;
   background-color: #d1cece;
-  width: 100%;
+  width: 200vw;
+  left: -40vw;
   height: 200px;
+  z-index: -100;
 }
 footer ul{
   display: flex;
