@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: #ffd2d2;
+  overflow-x: hidden;
+}
+.pet {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 100px auto;
+}
+header {
+  background: linear-gradient(230deg, #e28818 0%, #ffec36 25%);
+  position: relative;
+  /* border: 1px solid #000; */
+  width: 600px;
+  height: 500px;
+  border-radius: 47% 53% 51% 49% / 64% 65% 35% 36%;
+}
+.hair {
+  background: linear-gradient(75deg, #e28818 0%, #ffec36 40%);
+  position: absolute;
+  left: 100px;
+  top: -50px;
+  height: 160px;
+  width: 120px;
+  z-index: -1;
+  border-radius: 48% 52% 29% 71% / 71% 65% 35% 29%;
+  transform: rotate(-40deg);
+  transform-origin: bottom ;
+  animation: hair 1.5s infinite alternate;
+}
+.body {
+  position: absolute;
+  top: 200px;
+  background: linear-gradient(30deg, #e28818 0%, #ffec36 40%);
+  width: 600px;
+  height: 400px;
+  z-index: 1;
+  border-bottom: 1.1px solid #000;
+  /* border: 1px solid #000; */
+  border-radius: 53% 47% 71% 29% / 30% 33% 67% 70%;
+}
+.eye {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #4d1609;
+}
+.eye.left {
+  top: 132px;
+  left: 31px;
+  z-index: -10;
+}
+.eye.right {
+  top: 145px;
+  left: 120px;
+  z-index: 45;
+}
+.mouth.top {
+  position: absolute;
+  top: 170px;
+  left: 25px;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid rgb(134, 49, 49);
+  background: linear-gradient(30deg, #8b320c 0%, #FB811C 50%);
+  border-radius: 80% 20% 16% 84% / 48% 42% 58% 52%;
+  z-index: 100;
+}
+.cheek{
+  position: absolute;
+  top: -40px;
+  left: 133px;
+  z-index: 30px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #FEABAB;
+  height: 65px;
+}
+.mouth.bottom{
+  position: absolute;
+  top: 190px;
+  left: 25px;
+  width: 30px;
+  height: 30px;
+  border-bottom: 1px solid rgb(141, 49, 49);
+  background: linear-gradient(30deg, #8b320c 0%, #FB811C 50%);
+  border-radius: 65% 35% 36% 64% / 48% 42% 58% 52% ;
+  z-index: 90;
+}
+.wing {
+  position: absolute;
+  left: 200px;
+  top: 50px;
+  width: 120px;
+  height: 150px;
+  background: linear-gradient(10deg, #e28818 0%, #ffec36 40%);
+  border-bottom: 1px solid rgb(208, 211, 14);
+  border-top: 1px solid rgb(207, 194, 12);
+  border-radius: 46% 54% 58% 42% / 23% 23% 77% 77%;
+  transform-origin: top;
+  animation: wing 1.5s infinite alternate;
+}
+
+.tail {
+  position: absolute;
+  top: 80px;
+  right: -70px;
+  border-right: 1px solid rgb(202, 214, 24);
+  /* border: 1px solid #000; */
+  transform: rotate(-15deg);
+  background: linear-gradient(-50deg, #e28818 0%, #ffec36 40%);
+  width: 140px;
+  height: 150px;
+  border-radius: 53% 47% 71% 29% / 30% 33% 67% 70%;
+  transform-origin: bottom left;
+  animation: tail 1.5s infinite alternate;
+}
+.foot{
+  position: absolute;
+ 
+  width: 35px;
+  height: 55px;
+  border-bottom: 1px solid rgb(134, 49, 49);
+  background: linear-gradient(90deg, #8b320c 0%, #FB811C 50%);
+  border-radius: 80% 20% 16% 84% / 48% 42% 58% 52%;
+  animation: foot 1s infinite alternate;
+}
+.foot.left{
+  bottom: -30px;
+  left: 139px;
+  z-index: -10;
+  transform: rotate(-80deg);
+  animation-delay: 1s;
+}
+.foot.right{
+  bottom: -25px;
+  left: 239px;
+  z-index: 10;
+  transform: rotate(-100deg);
+}
+footer{
+  position: absolute;
+  bottom: 100px;
+  background-color: #d1cece;
+  width: 100%;
+  height: 200px;
+}
+footer ul{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: -3000px;
+}
+footer ul li{
+  list-style: none;
+  margin: 20px;
+  background-color: #928f8f;
+  width: 300px;
+  height: 100px;
+  animation: footer 10s infinite;
+}
+@keyframes hair {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(-30deg) 
+  }
+}
+@keyframes wing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-30deg) skewY(15deg) translate(10px);
+  }
+}
+
+@keyframes tail {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-18deg) translate(10px);
+  }
+}
+
+@keyframes foot {
+  from {
+    transform: rotate(-80deg) translateY(0px);
+  }
+  to {
+    transform: rotate(-100deg)translateY(80px);
+  }
+}
+@keyframes footer {
+  0% {
+    transform:  translateX(0px);
+  }
+  100% {
+    transform: translateX(2000px);
+  }
+}
